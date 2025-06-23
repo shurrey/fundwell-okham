@@ -1,0 +1,13 @@
+name: app01
+pods:
+  - name: main-pod
+    size: big
+    public: true
+    containers:
+      - name: main
+        image: main
+        env:
+          API_KEY: secrets.API_KEY
+          BOX_CLIENT_ID: secrets.BOX_CLIENT_ID
+          BOX_CLIENT_SECRET: secrets.BOX_CLIENT_SECRET
+          BOX_ENTERPRISE_ID: secrets.BOX_ENTERPRISE_ID
